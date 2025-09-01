@@ -78,9 +78,12 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+  min-height: 100vh;
+  padding: 50px 10%;
+  opacity: 1;   /* ensure visible */
+  transform: translateY(0); /* remove if hidden */
 }
+
 
 
 .home {
@@ -847,4 +850,5 @@ section:nth-child(odd) .animate.scroll,
     100% {
         width: 0;
     }
+
 }
