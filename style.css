@@ -78,11 +78,15 @@ body {
 }
 
 section {
-  min-height: 100vh;
-  padding: 50px 10%;
-  opacity: 1;   /* ensure visible */
-  transform: translateY(0); /* remove if hidden */
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 0.5s;
 }
+section.show-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
@@ -852,3 +856,4 @@ section:nth-child(odd) .animate.scroll,
     }
 
 }
+
